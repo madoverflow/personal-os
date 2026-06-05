@@ -26,6 +26,12 @@ modules:
         - micro
         - starship
         - code
+        - tableplus
+        - docker-ce 
+        - docker-ce-cli 
+        - containerd.io 
+        - docker-buildx-plugin 
+        - docker-compose-plugin
     remove:
       packages:
         # example: removing firefox (in favor of the flatpak)
@@ -44,6 +50,8 @@ modules:
           - com.github.tchx84.Flatseal
           - com.obsproject.Studio
           - org.telegram.desktop
+          - org.onlyoffice.desktopeditors
+          - org.gimp.GIMP
       - scope: user # Also add Flathub user repo, but no user packages
 
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
