@@ -81,7 +81,7 @@ modules:
       - ln -sf /usr/share/themes/Orchis-Dark/gtk-4.0/assets /etc/gtk-4.0/assets
       - ln -sf /usr/share/themes/Orchis-Dark/gtk-4.0/gtk.css /etc/gtk-4.0/gtk.css
       - ln -sf /usr/share/themes/Orchis-Dark/gtk-4.0/gtk-dark.css /etc/gtk-4.0/gtk-dark.css
-      - flatpak override --global --filesystem=usr/share/themes:ro --filesystem=usr/share/icons:ro
-      - flatpak override --global --env=GTK_THEME=Orchis-Dark
+      - flatpak override --system --filesystem=usr/share/themes:ro --filesystem=usr/share/icons:ro
+      - flatpak override --system --env=GTK_THEME=Orchis-Dark
       
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
