@@ -27,6 +27,7 @@ modules:
         - starship
         - code
         - tableplus
+        - gnome-tweaks
     remove:
       packages:
         # example: removing firefox (in favor of the flatpak)
