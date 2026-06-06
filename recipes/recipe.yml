@@ -27,7 +27,6 @@ modules:
         - starship
         - code
         - tableplus
-        - gnome-tweak-tool
     remove:
       packages:
         # example: removing firefox (in favor of the flatpak)
@@ -48,6 +47,7 @@ modules:
           - org.telegram.desktop
           - org.onlyoffice.desktopeditors
           - org.gimp.GIMP
+          - org.gnome.Extensions
       - scope: user # Also add Flathub user repo, but no user packages
       
   - type: systemd
