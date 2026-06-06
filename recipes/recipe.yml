@@ -67,7 +67,7 @@ modules:
       - Vitals
      # - OpenWeather
      # - Sound Input & Output Device Chooser
-      - Removable Drive Menu
+      - 7
       - Clipboard Indicator
       
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
