@@ -69,5 +69,9 @@ modules:
      # - Sound Input & Output Device Chooser
       - 7
       - 779
+
+  - type: gschema-overrides
+    include:
+      - zz1-custom_config.gschema.override
       
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
