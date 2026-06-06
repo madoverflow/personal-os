@@ -1,0 +1,8 @@
+[org.gnome.desktop.interface]
+color-scheme='prefer-dark'
+gtk-theme='Nome-Del-Tuo-Tema-GTK'
+icon-theme='Nome-Del-Tuo-Tema-Icone'
+cursor-theme='Nome-Del-Tuo-Tema-Cursore'
+
+[org.gnome.shell]
+enabled-extensions=['ubuntu-dock@ubuntu.com', 'dash-to-panel@jderose9.github.com', 'user-theme@gnome-shell-extensions.gcampax.github.com']
