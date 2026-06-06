@@ -49,6 +49,7 @@ modules:
           - org.onlyoffice.desktopeditors
           - org.gimp.GIMP
           - org.gnome.Extensions
+          - org.gtk.Gtk3theme.Orchis-Dark
       - scope: user # Also add Flathub user repo, but no user packages
       
   - type: systemd
@@ -81,7 +82,6 @@ modules:
       - ln -sf /usr/share/themes/Orchis-Dark/gtk-4.0/assets /etc/gtk-4.0/assets
       - ln -sf /usr/share/themes/Orchis-Dark/gtk-4.0/gtk.css /etc/gtk-4.0/gtk.css
       - ln -sf /usr/share/themes/Orchis-Dark/gtk-4.0/gtk-dark.css /etc/gtk-4.0/gtk-dark.css
-      - flatpak override --system --filesystem=/usr/share/themes:ro --filesystem=/usr/share/icons:ro
       - flatpak override --system --env=GTK_THEME=Orchis-Dark
       
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
