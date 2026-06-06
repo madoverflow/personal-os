@@ -57,17 +57,17 @@ modules:
 
   - type: gnome-extensions
     install:
-      - Night Theme Switcher
-      - Blur my Shell
-      - AppIndicator and KStatusNotifierItem Support
-      - Dash to Dock
+      - 2236
+      - 3193
+      - 615
+      - 307
      # - Tray Icons
-      - User Themes
-      - ArcMenu
-      - Vitals
+      - 19
+      - 3628
+      - 1460
      # - OpenWeather
      # - Sound Input & Output Device Chooser
       - 7
-      - Clipboard Indicator
+      - 779
       
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
