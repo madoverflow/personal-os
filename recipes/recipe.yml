@@ -65,7 +65,7 @@ modules:
       - User Themes
       - ArcMenu
       - Vitals
-      - OpenWeather
+     # - OpenWeather
       - Sound Input & Output Device Chooser
       - Removable Drive Menu
       - Clipboard Indicator
