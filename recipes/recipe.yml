@@ -61,7 +61,7 @@ modules:
       - Blur my Shell
       - AppIndicator and KStatusNotifierItem Support
       - Dash to Dock
-      - Tray Icons
+     # - Tray Icons
       - User Themes
       - ArcMenu
       - Vitals
