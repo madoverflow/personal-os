@@ -32,6 +32,7 @@ modules:
         - containerd.io 
         - docker-buildx-plugin 
         - docker-compose-plugin
+        - podman-docker
     remove:
       packages:
         # example: removing firefox (in favor of the flatpak)
@@ -56,10 +57,6 @@ modules:
       
   - type: systemd
     system:
-      disabled:
-        - podman.service
-        - podman.socket
-        - podman-restart.service
       enabled:
         - docker.socket
         - docker.service
