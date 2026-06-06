@@ -27,6 +27,7 @@ modules:
         - starship
         - code
         - tableplus
+        - gnome-tweak-tool
     remove:
       packages:
         # example: removing firefox (in favor of the flatpak)
@@ -49,10 +50,24 @@ modules:
           - org.gimp.GIMP
       - scope: user # Also add Flathub user repo, but no user packages
       
-  #- type: systemd
-   # system:
-    #  enabled:
-     #   - docker.socket
-      #  - docker.service
+  - type: systemd
+    system:
+      enabled:
+        - bluetooth.service
+
+  - type: gnome-extensions
+    install:
+      - Night Theme Switcher
+      - Blur my Shell
+      - AppIndicator and KStatusNotifierItem Support
+      - Dash to Dock
+      - Tray Icons
+      - User Themes
+      - ArcMenu
+      - Vitals
+      - OpenWeather
+      - Sound Input & Output Device Chooser
+      - Removable Drive Menu
+      - Clipboard Indicator
       
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
