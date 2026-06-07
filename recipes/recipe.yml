@@ -82,6 +82,13 @@ modules:
       - ln -sf /usr/share/themes/Orchis-Dark/gtk-4.0/assets /etc/gtk-4.0/assets
       - ln -sf /usr/share/themes/Orchis-Dark/gtk-4.0/gtk.css /etc/gtk-4.0/gtk.css
       - ln -sf /usr/share/themes/Orchis-Dark/gtk-4.0/gtk-dark.css /etc/gtk-4.0/gtk-dark.css
+      # Condividiamo la cartella dei temi di sistema con il sandbox Flatpak
+      - flatpak override --system --filesystem=usr/share/themes:ro
+      
+      # Diciamo a Flatpak che la cartella dei temi si trova lì
+      - flatpak override --system --env=GTK_PATH=/usr/share/themes
+      
+      # Forziamo il nome del tema GTK
       - flatpak override --system --env=GTK_THEME=Orchis-Dark
       
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
