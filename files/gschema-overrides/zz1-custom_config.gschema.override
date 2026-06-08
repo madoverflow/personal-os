@@ -11,4 +11,4 @@ scaling-factor=1
 enabled-extensions=['arcmenu@arcmenu.com','blur-my-shell@aunetx','clipboard-indicator@tudmotu.com','dash-to-dock@micxgx.gmail.com','drive-menu@gnome-shell-extensions-gcampax.github.com','nightthemeswitcher@romainvigier.fr','user-theme@gnome-shell-extensions-gcampax.github.com','Vitals@CoreCoding.com']
 
 [org.gnome.shell.extensions.user-theme]
-name='Orchis-Dark
+name='Orchis-Dark'
